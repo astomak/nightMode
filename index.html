@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="build.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <title>Night Mode</title>
+  </head>
+  <body class="bg-white dark:bg-gray-900 dark:text-white">
+    <!-- Nav Section -->
+    <nav
+      class="flex justify-between items-center p-4 fixed w-full bg-white dark:bg-gray-900 bg-opacity-50 font-nav font-bold text-red-600 dark:text-purple-600 z-10"
+    >
+      <!-- Reference Setion -->
+      <div class="flex space-x-8 text-2xl">
+        <a class="hover:text-gray-800 dark:hover:text-white hover:underline" href="#home"> Home </a>
+        <a class="hover:text-gray-800 dark:hover:text-white hover:underline" href="#project"> Project </a>
+        <a class="hover:text-gray-800 dark:hover:text-white hover:underline" href="#about"> About </a>
+        <a class="hover:text-gray-800 dark:hover:text-white hover:underline" href="#contact"> Contact </a>
+      </div>
+      <!-- Dark Mode / Light Mode Text -->
+      <div class="flex space-x-4">
+        <div class="text-black dark:text-white">
+          <div id="light_mode" class="flex space-x-4 items-center">
+            <span>Light Mode</span>
+            <i class="fas fa-sun font-extrabold text-2xl"></i>
+          </div>
+          <div id="dark_mode" class="hidden flex space-x-4 items-center">
+            <span>Night Mode</span>
+            <i class="fas fa-moon font-extrabold text-2xl"></i>
+          </div>
+        </div>
+        <!-- Toggle Button -->
+        <label for="toogleA" class="flex items-center cursor-pointer">
+          <!-- toggle -->
+          <div class="relative">
+            <!-- input -->
+            <input id="toogleA" type="checkbox" class="hidden" />
+            <!-- line -->
+            <div class="toggle__line w-12 h-6 bg-gray-400 rounded-full shadow-inner"></div>
+            <!-- dot -->
+            <div class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"></div>
+          </div>
+        </label>
+      </div>
+    </nav>
+    <!-- Home Section -->
+    <section class="h-screen flex flex-col justify-center items-center" id="home">
+      <h1 class="text-7xl font-bold font-body">Custom Title Here</h1>
+      <h2 class="text-2xl">Welcome to the Website!</h2>
+    </section>
+    <!-- About Section -->
+    <section class="h-screen flex flex-col justify-center items-center" id="project">
+      <h1 class="text-7xl font-bold font-body">Undraw Illustration</h1>
+      <div class="flex space-x-6 px-20 mt-6">
+        <div
+          class="shadow-cus rounded-lg bg-white dark:bg-gray-900 transform hover:scale-105 hover:bg-gray-100 dark:hover:bg-gray-700"
+        >
+          <p class="text-3xl font-semi-body tracking-wider font-bold text-center mt-2">By The Road</p>
+          <img
+            src="./UndrawIllusration/undraw_By_the_road_re_vvs7_light.svg"
+            alt="By the Road"
+            class="object-contain w-full h-full"
+            id="img1"
+          />
+        </div>
+        <div
+          class="shadow-cus rounded-lg bg-white dark:bg-gray-900 transform hover:scale-105 hover:bg-gray-100 dark:hover:bg-gray-700"
+        >
+          <p class="text-3xl font-semi-body tracking-wider font-bold text-center mt-2">My Location</p>
+          <img
+            src="./UndrawIllusration/undraw_My_location_re_r52x_light.svg"
+            alt="My Location"
+            class="p-8 object-contain w-full h-full"
+            id="img2"
+          />
+        </div>
+        <div
+          class="shadow-cus rounded-lg bg-white dark:bg-gray-900 transform hover:scale-105 hover:bg-gray-100 dark:hover:bg-gray-700"
+        >
+          <p class="text-3xl font-semi-body tracking-wider font-bold text-center mt-2">Travel Mode</p>
+          <img
+            src="./UndrawIllusration/undraw_Travel_mode_re_2lxo_light.svg"
+            alt="Travel Mode"
+            class="object-contain w-full h-full"
+            id="img3"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Project Section -->
+    <section class="h-screen flex flex-col justify-center items-center" id="about">
+      <h1 class="text-7xl font-bold font-body">Buttons</h1>
+      <div class="flex space-x-2 mt-5">
+        <button class="bg-red-600">Primary</button>
+        <button class="bg-purple-600">Primary</button>
+        <button class="bg-green-600">Primary</button>
+        <button class="bg-blue-500">Primary</button>
+        <button class="ring-red-600 ring-2">Primary</button>
+        <button class="bg-red-500">Primary</button>
+      </div>
+      <p
+        class="text-center max-w-3xl bg-black bg-opacity-70 text-white font-semi-body mt-5 text-2xl tracking-widest p-4 rounded-lg"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sunt nobis nostrum voluptatum illum eligendi,
+        maxime debitis quisquam nam itaque quasi ipsa perspiciatis omnis ex asperiores doloribus, blanditiis facere a!
+      </p>
+    </section>
+    <!-- Contact Section-->
+    <section class="h-screen flex flex-col justify-center items-center" id="contact">
+      <div class="flex space-x-10 justify-center w-full text-8xl text-red-600 dark:text-purple-600">
+        <i class="cursor-pointer hover:text-gray-800 dark:hover:text-white fab fa-facebook"></i>
+        <i class="cursor-pointer hover:text-gray-800 dark:hover:text-white fab fa-instagram-square"></i>
+        <i class="cursor-pointer hover:text-gray-800 dark:hover:text-white fab fa-twitter"></i>
+        <i class="cursor-pointer hover:text-gray-800 dark:hover:text-white fab fa-github"></i>
+        <i class="cursor-pointer hover:text-gray-800 dark:hover:text-white fab fa-codepen"></i>
+        <i class="cursor-pointer hover:text-gray-800 dark:hover:text-white fab fa-whatsapp-square"></i>
+      </div>
+    </section>
+
+    <!-- Script -->
+    <script src="./script.js"></script>
+  </body>
+</html>
